@@ -1,0 +1,97 @@
+#include <iostream>
+#include <stdlib.h>
+#define MAX 20
+
+using namespace std;
+
+
+void imprimirEncabezado(){
+	cout << endl << endl << "Mastermind" << endl << "Version: 0.1" << endl << endl;
+}
+
+void imprimirReglas(int largo){
+	cout << endl << "Entonces, he generado una secuencia de " << largo << " simbolos, los simbolos que utiize son @#$%&, estos se pueden repetir." << endl;
+}
+
+char* pedirNombre(char* n, int max){
+	cout << "Introduce tu nombre (max " << max << " caract): ";
+	cin >> n;
+	return n; 
+}
+
+int pedirNumero(char* nombre){
+	int n = 0;
+	cout << "Hola " << nombre << ", ingresa un numero entre 3-7: ";
+	cin >> n;
+	if(n < 3 || n > 7)
+		do{
+			cout << nombre << ", el numero que digitastes no es correcto. Por favor ingresa un numero entre 3-7: ";
+			cin >> n;
+		}while(n < 3 || n > 7);
+}
+
+char* generarSecuencia(int largo){
+	char* secuencia = new char[largo];
+	char* simbolos = "@#$%&";
+	for(int i = 0; i < largo; i++)
+		secuencia[i] = simbolos[(rand() % 5)];
+	return secuencia;
+}
+
+int evaluarRespuesta(char* respuesta, char* secuencia, int largo){
+	int c = 0;
+	for(int i = 0; i < largo; i++)
+		if(respuesta[i] == secuencia[i])
+			c++; //lol
+	return c;
+}
+
+int pedirRespuesta(char* secuencia, char* nombre, int largo){
+	char* ejemplo = new char[largo];
+	char* respuesta = new char[largo];
+
+
+	for(int i = 0; i < largo; i++)
+		ejemplo[i] = 'S';
+	while(true){ // loop malvado pero sale con los returns
+		for(int i = 0; i < largo; i++)
+			respuesta[i] = 'a'; //para asegurarme que se "borre" lo que ya habia
+		cout << endl << "Adivina mi secuencia, debe tener un largo de " << largo << " simbolos de la forma " << ejemplo << " (escribe X para salir del juego): ";
+		cin >> respuesta;
+		if(respuesta[0] == 'X' || respuesta[0] == 'x'){
+			char r;
+			cout << "Estas seguro que deseas salir (escribe S): ";
+			cin >> r;
+			if(r == 'S' || r == 's')
+				return 0;
+		}else{
+			int coincidencias = evaluarRespuesta(respuesta, secuencia, largo);
+			if(coincidencias == largo){
+				cout << "Felicidades " << nombre << ", adivinastes la secuencia. :D" << endl;
+				return 0;
+			}else{
+				cout << "Tienes " << coincidencias << ((coincidencias == 1)?" simbolo ":" simbolos ") << "en la posicion correcta." << endl;
+			}
+		}
+	}	  
+}
+
+int jugar(){
+	// declaracion de variables
+	char* nombre = new char[MAX]; 
+	int largoSecuencia = 0;
+	char* secuencia;
+
+	imprimirEncabezado();
+	nombre = pedirNombre(nombre, MAX); 
+	largoSecuencia = pedirNumero(nombre);
+	secuencia = generarSecuencia(largoSecuencia);
+
+	imprimirReglas(largoSecuencia);
+	cout << secuencia << endl;
+	return pedirRespuesta(secuencia, nombre, largoSecuencia);
+}
+
+int main(){
+	return jugar();
+}

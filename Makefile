@@ -1,7 +1,3 @@
-compile:
-	g++ mastermind.cpp -omastermind
-run:
-	./mastermind
 go:
-	g++ mastermind.cpp -omastermind -Wno-write-strings
+	g++ Main.cpp Interfaz.cpp Mastermind.cpp Secuencia.cpp -omastermind -Wno-write-strings
 	./mastermind

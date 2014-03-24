@@ -6,19 +6,12 @@ class Interfaz {
 
  public:
 
-    void imprimirMensaje(char* mensaje);
-
-    int pedirEnteroRestriccion(char* mensaje, int min, int max);
-
-    char* pedirHilera(char* mensaje, int tamano);
-    
-    char pedirCaracter(char* mensaje);
-    
-    void imprimirHilera(char* mensaje);
-    
+    void imprimirMensaje(char*);
+    int pedirEnteroRestriccion(char*, int, int);
+    char* pedirHilera(char*, int);
+    char pedirCaracter(char*);
+    void imprimirHilera(char*);
     void imprimirCambioLinea();
-    
-    void imprimirNumero(int n);
+    void imprimirNumero(int);
 };
-
 #endif // Interfaz_h

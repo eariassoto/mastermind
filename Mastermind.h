@@ -10,13 +10,11 @@ class Mastermind {
  public:
 
     Mastermind();
-	int iniciarJuego();
     ~Mastermind();
-
-  
-
+	int iniciarJuego();
 
  private:
+ 
     Secuencia * secuencia;
     Interfaz * interfaz;
 };

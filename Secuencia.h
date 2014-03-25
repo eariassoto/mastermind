@@ -6,17 +6,16 @@ class Secuencia {
 
  public:
  
-    Secuencia();
+    Secuencia(int);
     ~Secuencia();
-    int generarSecuencia(int);
     int evaluarRespuesta(char* respuesta);
 	int getLargoSecuencia();
 	char* getSimbolos();
 
  private:
  
+    int largoSecuencia;
     char * secuencia;
     char * simbolos;
-    int * largoSecuencia;
 };
 #endif // Secuencia_h

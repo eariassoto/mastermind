@@ -2,23 +2,17 @@
 #include <string.h>
 #include "Secuencia.h"
 
-Secuencia::Secuencia(){
-	largoSecuencia = new int;
+Secuencia::Secuencia(int largo){
+	largoSecuencia = largo;
 	simbolos = "@#$%&";
+	secuencia = new char[largo];
+	for(int i = 0; i < largo; i++)
+		secuencia[i] = simbolos[(rand() % 5)];
 }
 
 Secuencia::~Secuencia(){
     delete [] secuencia;
     delete [] simbolos;
-    delete largoSecuencia;
-}
-
-int Secuencia::generarSecuencia(int largo){
-	*largoSecuencia = largo;
-	secuencia = new char[largo];
-	for(int i = 0; i < largo; i++)
-		secuencia[i] = simbolos[(rand() % 5)];
-    return 0;
 }
 
 int Secuencia::evaluarRespuesta(char* respuesta){
@@ -31,7 +25,7 @@ int Secuencia::evaluarRespuesta(char* respuesta){
 }
 
 int Secuencia::getLargoSecuencia(){
-    return *largoSecuencia;
+    return largoSecuencia;
 }
 
 char* Secuencia::getSimbolos(){

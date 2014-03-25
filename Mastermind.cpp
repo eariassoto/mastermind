@@ -4,7 +4,6 @@
 
 
 Mastermind::Mastermind(){
-	secuencia = new Secuencia();
 	interfaz = new Interfaz();
 }
 
@@ -23,7 +22,7 @@ int Mastermind::iniciarJuego(){
 
 	interfaz->imprimirHilera("Hola ");
 	interfaz->imprimirHilera(nombre);
-	secuencia->generarSecuencia(interfaz->pedirEnteroRestriccion(", ingresa un numero entre 3 y 7: ",3,7));
+	secuencia = new Secuencia(interfaz->pedirEnteroRestriccion(", ingresa un numero entre 3 y 7: ",3,7));
 		
 	interfaz->imprimirCambioLinea();
 	interfaz->imprimirHilera("He generado una secuencia de simbolos, estos se pueden repetir y son: ");

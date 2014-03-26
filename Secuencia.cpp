@@ -21,7 +21,6 @@ int Secuencia::evaluarRespuesta(char* respuesta){
 		if(respuesta[i] == secuencia[i])
 			c++; //lol
 	return c;
-    return 0;
 }
 
 int Secuencia::getLargoSecuencia(){

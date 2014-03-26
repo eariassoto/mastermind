@@ -1,7 +1,8 @@
 #ifndef Secuencia_h
 #define Secuencia_h
 
-
+/**/brief hola que ase
+*/
 class Secuencia {
 
  public:

@@ -9,6 +9,10 @@ class Secuencia {
  
     Secuencia(int);
     ~Secuencia();
+    
+    /**\brieh holis
+    * \param respuesta hfshdjghk
+    */
     int evaluarRespuesta(char* respuesta);
 	int getLargoSecuencia();
 	char* getSimbolos();

@@ -1,30 +1,140 @@
 \hypertarget{classInterfaz}{\section{Referencia de la Clase Interfaz}
 \label{classInterfaz}\index{Interfaz@{Interfaz}}
 }
+
+
+Se encarga de entrada y salidad de datos.  
+
+
+
+
+{\ttfamily \#include $<$Interfaz.\-h$>$}
+
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classInterfaz_a6382863414237dba0136f58e3c0b4da2}{void {\bfseries imprimir\-Mensaje} (char $\ast$)}\label{classInterfaz_a6382863414237dba0136f58e3c0b4da2}
+void \hyperlink{classInterfaz_ae6fbdd961b4fc185e69e1652d2c72560}{imprimir\-Hilera} (char $\ast$mensaje)
+\begin{DoxyCompactList}\small\item\em Imprime en consola un mensaje. \end{DoxyCompactList}\item 
+void \hyperlink{classInterfaz_a10c786792b9e1ae657bd08e6247a4144}{imprimir\-Numero} (int)
+\begin{DoxyCompactList}\small\item\em Imprime en consola un digito. \end{DoxyCompactList}\item 
+int \hyperlink{classInterfaz_a272b4afcea9450ed60271881c4d5d5e6}{pedir\-Entero\-Restriccion} (char $\ast$mensaje, int min, int max)
+\begin{DoxyCompactList}\small\item\em Pide un entero al usuario y lo valida. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{classInterfaz_a971f4279e5debdff50a43c19777fb246}{pedir\-Hilera} (char $\ast$mensaje)
+\begin{DoxyCompactList}\small\item\em Pide una hilera al usuario. \end{DoxyCompactList}\item 
+char \hyperlink{classInterfaz_a87e7eefe7bbad7b006e08d5d3a56abca}{pedir\-Caracter} (char $\ast$mensaje)
+\begin{DoxyCompactList}\small\item\em Pide un caracter al usuario. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-\hypertarget{classInterfaz_ae4e5da263b8b0f7bc5e9e4cceccfcd05}{int {\bfseries pedir\-Entero\-Restriccion} (char $\ast$, int, int)}\label{classInterfaz_ae4e5da263b8b0f7bc5e9e4cceccfcd05}
 
-\item 
-\hypertarget{classInterfaz_a89c5a82f0ecf06e958e8081b8fbccb9e}{char $\ast$ {\bfseries pedir\-Hilera} (char $\ast$, int)}\label{classInterfaz_a89c5a82f0ecf06e958e8081b8fbccb9e}
+\subsection{Descripción detallada}
+Se encarga de entrada y salidad de datos. 
 
-\item 
-\hypertarget{classInterfaz_a42855651b9ea0812909a9aa9297e3328}{char {\bfseries pedir\-Caracter} (char $\ast$)}\label{classInterfaz_a42855651b9ea0812909a9aa9297e3328}
+\begin{DoxyAuthor}{Autor}
+Emmanuel Arias Soto B30640
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Versión}
+0.\-1
+\end{DoxyVersion}
+\begin{DoxyDate}{Fecha}
+2014/03/27
+\end{DoxyDate}
+\href{mailto:emmanuel1412@gmail.com}{\tt emmanuel1412@gmail.\-com} 
 
-\item 
-\hypertarget{classInterfaz_aa8be240a3e161a0da875cab8f2d49617}{void {\bfseries imprimir\-Hilera} (char $\ast$)}\label{classInterfaz_aa8be240a3e161a0da875cab8f2d49617}
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classInterfaz_ae6fbdd961b4fc185e69e1652d2c72560}{\index{Interfaz@{Interfaz}!imprimir\-Hilera@{imprimir\-Hilera}}
+\index{imprimir\-Hilera@{imprimir\-Hilera}!Interfaz@{Interfaz}}
+\subsubsection[{imprimir\-Hilera}]{\setlength{\rightskip}{0pt plus 5cm}void Interfaz\-::imprimir\-Hilera (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{mensaje}
+\end{DoxyParamCaption}
+)}}\label{classInterfaz_ae6fbdd961b4fc185e69e1652d2c72560}
 
-\item 
-\hypertarget{classInterfaz_a26b3cb211a514f045afc8b7b6287adba}{void {\bfseries imprimir\-Cambio\-Linea} ()}\label{classInterfaz_a26b3cb211a514f045afc8b7b6287adba}
 
-\item 
-\hypertarget{classInterfaz_a10c786792b9e1ae657bd08e6247a4144}{void {\bfseries imprimir\-Numero} (int)}\label{classInterfaz_a10c786792b9e1ae657bd08e6247a4144}
+Imprime en consola un mensaje. 
 
-\end{DoxyCompactItemize}
+
+\begin{DoxyParams}{Parámetros}
+{\em mensaje} & Hilera a imprimir. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classInterfaz_a10c786792b9e1ae657bd08e6247a4144}{\index{Interfaz@{Interfaz}!imprimir\-Numero@{imprimir\-Numero}}
+\index{imprimir\-Numero@{imprimir\-Numero}!Interfaz@{Interfaz}}
+\subsubsection[{imprimir\-Numero}]{\setlength{\rightskip}{0pt plus 5cm}void Interfaz\-::imprimir\-Numero (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{classInterfaz_a10c786792b9e1ae657bd08e6247a4144}
+
+
+Imprime en consola un digito. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em mensaje} & Digito a imprimir \\
+\hline
+\end{DoxyParams}
+\hypertarget{classInterfaz_a87e7eefe7bbad7b006e08d5d3a56abca}{\index{Interfaz@{Interfaz}!pedir\-Caracter@{pedir\-Caracter}}
+\index{pedir\-Caracter@{pedir\-Caracter}!Interfaz@{Interfaz}}
+\subsubsection[{pedir\-Caracter}]{\setlength{\rightskip}{0pt plus 5cm}char Interfaz\-::pedir\-Caracter (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{mensaje}
+\end{DoxyParamCaption}
+)}}\label{classInterfaz_a87e7eefe7bbad7b006e08d5d3a56abca}
+
+
+Pide un caracter al usuario. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em mensaje} & Mensaje a imprimir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Caracter ingresado por el usuario. 
+\end{DoxyReturn}
+\hypertarget{classInterfaz_a272b4afcea9450ed60271881c4d5d5e6}{\index{Interfaz@{Interfaz}!pedir\-Entero\-Restriccion@{pedir\-Entero\-Restriccion}}
+\index{pedir\-Entero\-Restriccion@{pedir\-Entero\-Restriccion}!Interfaz@{Interfaz}}
+\subsubsection[{pedir\-Entero\-Restriccion}]{\setlength{\rightskip}{0pt plus 5cm}int Interfaz\-::pedir\-Entero\-Restriccion (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{mensaje, }
+\item[{int}]{min, }
+\item[{int}]{max}
+\end{DoxyParamCaption}
+)}}\label{classInterfaz_a272b4afcea9450ed60271881c4d5d5e6}
+
+
+Pide un entero al usuario y lo valida. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em mensaje} & Mensaje a imprimir. \\
+\hline
+{\em min} & Rango minimo del digito (inclusive). \\
+\hline
+{\em max} & Rango maximo del digito (inclusive). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+digito ingresado por el usuario. 
+\end{DoxyReturn}
+\hypertarget{classInterfaz_a971f4279e5debdff50a43c19777fb246}{\index{Interfaz@{Interfaz}!pedir\-Hilera@{pedir\-Hilera}}
+\index{pedir\-Hilera@{pedir\-Hilera}!Interfaz@{Interfaz}}
+\subsubsection[{pedir\-Hilera}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Interfaz\-::pedir\-Hilera (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{mensaje}
+\end{DoxyParamCaption}
+)}}\label{classInterfaz_a971f4279e5debdff50a43c19777fb246}
+
+
+Pide una hilera al usuario. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em mensaje} & Mensaje a imprimir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Hileta ingresada por el usuario. 
+\end{DoxyReturn}
 
 
 La documentación para esta clase fue generada a partir de los siguientes ficheros\-:\begin{DoxyCompactItemize}

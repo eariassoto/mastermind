@@ -3,7 +3,6 @@
 #include "Secuencia.h"
 
 Secuencia::Secuencia(int largo){
-	largoSecuencia = largo;
 	simbolos = "@#$%&";
 	secuencia = new char[largo];
 	for(int i = 0; i < largo; i++)
@@ -11,20 +10,19 @@ Secuencia::Secuencia(int largo){
 }
 
 Secuencia::~Secuencia(){
-    delete [] secuencia;
-    delete [] simbolos;
+    delete this;
 }
 
 int Secuencia::evaluarRespuesta(char* respuesta){
 	int c = 0;
 	for(int i = 0; i < strlen(secuencia); i++)
 		if(respuesta[i] == secuencia[i])
-			c++; //lol
+			c++;
 	return c;
 }
 
 int Secuencia::getLargoSecuencia(){
-    return largoSecuencia;
+    return strlen(secuencia);
 }
 
 char* Secuencia::getSimbolos(){

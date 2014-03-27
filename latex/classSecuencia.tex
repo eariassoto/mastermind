@@ -3,7 +3,7 @@
 }
 
 
-hola que ase  
+Se encarga de crear la secuencia de simbolos y evaluar la respuesta del usuario.  
 
 
 
@@ -13,21 +13,48 @@ hola que ase
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classSecuencia_a506048ef2ac72769f236cca5418c70dd}{{\bfseries Secuencia} (int)}\label{classSecuencia_a506048ef2ac72769f236cca5418c70dd}
-
-\item 
+\hyperlink{classSecuencia_a22fe0ee7da5c269e265e5996940cf73e}{Secuencia} (int largo)
+\begin{DoxyCompactList}\small\item\em Constructor, crea la secuencia. \end{DoxyCompactList}\item 
 int \hyperlink{classSecuencia_a4d83bb7921ec8838348c4e887b28644c}{evaluar\-Respuesta} (char $\ast$respuesta)
+\begin{DoxyCompactList}\small\item\em Compara la respuesta del usuario con la secuencia se ha creado. \end{DoxyCompactList}\item 
+int \hyperlink{classSecuencia_a9d78db236dd037a2acd620669cf2557e}{get\-Largo\-Secuencia} ()
 \item 
-\hypertarget{classSecuencia_a9d78db236dd037a2acd620669cf2557e}{int {\bfseries get\-Largo\-Secuencia} ()}\label{classSecuencia_a9d78db236dd037a2acd620669cf2557e}
-
-\item 
-\hypertarget{classSecuencia_a174efa01bcb29b7b3fa19a2dac1c767b}{char $\ast$ {\bfseries get\-Simbolos} ()}\label{classSecuencia_a174efa01bcb29b7b3fa19a2dac1c767b}
-
+char $\ast$ \hyperlink{classSecuencia_a174efa01bcb29b7b3fa19a2dac1c767b}{get\-Simbolos} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Descripción detallada}
-hola que ase 
+Se encarga de crear la secuencia de simbolos y evaluar la respuesta del usuario. 
+
+\begin{DoxyAuthor}{Autor}
+Emmanuel Arias Soto B30640
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Versión}
+0.\-1
+\end{DoxyVersion}
+\begin{DoxyDate}{Fecha}
+2014/03/26
+\end{DoxyDate}
+\href{mailto:emmanuel1412@gmail.com}{\tt emmanuel1412@gmail.\-com} 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classSecuencia_a22fe0ee7da5c269e265e5996940cf73e}{\index{Secuencia@{Secuencia}!Secuencia@{Secuencia}}
+\index{Secuencia@{Secuencia}!Secuencia@{Secuencia}}
+\subsubsection[{Secuencia}]{\setlength{\rightskip}{0pt plus 5cm}Secuencia\-::\-Secuencia (
+\begin{DoxyParamCaption}
+\item[{int}]{largo}
+\end{DoxyParamCaption}
+)}}\label{classSecuencia_a22fe0ee7da5c269e265e5996940cf73e}
+
+
+Constructor, crea la secuencia. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em largo} & Largo de la secuencia elegida por el usuario. \\
+\hline
+\end{DoxyParams}
+
 
 \subsection{Documentación de las funciones miembro}
 \hypertarget{classSecuencia_a4d83bb7921ec8838348c4e887b28644c}{\index{Secuencia@{Secuencia}!evaluar\-Respuesta@{evaluar\-Respuesta}}
@@ -37,11 +64,38 @@ hola que ase
 \item[{char $\ast$}]{respuesta}
 \end{DoxyParamCaption}
 )}}\label{classSecuencia_a4d83bb7921ec8838348c4e887b28644c}
-holis 
+
+
+Compara la respuesta del usuario con la secuencia se ha creado. 
+
+
 \begin{DoxyParams}{Parámetros}
-{\em respuesta} & hfshdjghk \\
+{\em respuesta} & \hyperlink{classSecuencia}{Secuencia} de caracteres ingresada por el usuario /\\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Cantidad de símbolos en la posicion correcta. 
+\end{DoxyReturn}
+\hypertarget{classSecuencia_a9d78db236dd037a2acd620669cf2557e}{\index{Secuencia@{Secuencia}!get\-Largo\-Secuencia@{get\-Largo\-Secuencia}}
+\index{get\-Largo\-Secuencia@{get\-Largo\-Secuencia}!Secuencia@{Secuencia}}
+\subsubsection[{get\-Largo\-Secuencia}]{\setlength{\rightskip}{0pt plus 5cm}int Secuencia\-::get\-Largo\-Secuencia (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSecuencia_a9d78db236dd037a2acd620669cf2557e}
+\begin{DoxyReturn}{Devuelve}
+Largo de la secuencia generada por el programa. 
+\end{DoxyReturn}
+\hypertarget{classSecuencia_a174efa01bcb29b7b3fa19a2dac1c767b}{\index{Secuencia@{Secuencia}!get\-Simbolos@{get\-Simbolos}}
+\index{get\-Simbolos@{get\-Simbolos}!Secuencia@{Secuencia}}
+\subsubsection[{get\-Simbolos}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Secuencia\-::get\-Simbolos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSecuencia_a174efa01bcb29b7b3fa19a2dac1c767b}
+\begin{DoxyReturn}{Devuelve}
+Lista de simbolos que uso el programa para generar la secuencia. 
+\end{DoxyReturn}
 
 
 La documentación para esta clase fue generada a partir de los siguientes ficheros\-:\begin{DoxyCompactItemize}

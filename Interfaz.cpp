@@ -3,20 +3,12 @@
 
 using namespace std;
 
-void Interfaz::imprimirMensaje(char* mensaje){
-    cout << mensaje << endl;
-}
-
 void Interfaz::imprimirHilera(char* mensaje){
     cout << mensaje;
 }
 
 void Interfaz::imprimirNumero(int n){
     cout << n;
-}
-
-void Interfaz::imprimirCambioLinea(){
-    cout << endl;
 }
 
 int Interfaz::pedirEnteroRestriccion(char* mensaje, int min, int max){
@@ -31,16 +23,16 @@ int Interfaz::pedirEnteroRestriccion(char* mensaje, int min, int max){
     return *n;
 }
 
-char* Interfaz::pedirHilera(char* mensaje, int tamano){
-	char *msj = new char[tamano];
+char* Interfaz::pedirHilera(char* mensaje){
+	char *msj = new char[10];
 	cout << mensaje;
 	cin >> msj;
     return msj;
 }
 
 char Interfaz::pedirCaracter(char* mensaje){
-	char c = 'a';
+	char * c = new char;
 	cout << mensaje;
-	cin >> c;
-    return c;
+	cin >> *c;
+    return *c;
 }
